@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/remixicon/remixicon.css">
+    <link rel="stylesheet" href="assets/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Modern Jao</title>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="circle">
+        <!-- cursor -->
+    </div>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen, like text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar TOP -->
+    <nav class="navbar border-bottom bg-body-tertiary">
+        <div class="ofcanva-logo">
+            <div class="opcao-nav">
+                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <i class="ri-menu-2-line fs-4"></i>
+                </button>
+            </div>
+            <div class="logo">
+                <h1>
+                    <a class="navbar-brand" href="index.html"><span>Modern</span> Jao</a>
+                </h1>
+            </div>
+        </div>
+        <div class="make-nav">
+            <div class="btn-group">
+                <div class="drop">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle me-3 btn-nav"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-primary me-3 btn-nav"><i class="ri-book-2-fill"></i></button>
+                <button class="btn btn-outline-primary me-3 btn-nav"><i class="ri-shield-star-fill"></i></button>
+                <button class="btn btn-outline-primary btn-nav" onclick="tema()"><i class="ri-sun-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="p-3">
+        <!-- Swiper -->
+        <div class="swiper mySwiper pt-3">
+            <div class="swiper-wrapper rounded">
+                <div class="swiper-slide"><img src="https://fakeimg.pl/1400x200/?text=Hello"></div>
+                <div class="swiper-slide"><img src="https://fakeimg.pl/1400x200/?text=AmoMinhaMulher"></div>
+                <div class="swiper-slide"><img src="https://fakeimg.pl/1400x200/?text=Gabriella"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <section id="view-section" class="pt-3">
+            <!-- home -->
+            <div class="content-home">
+                <div class="nav-rapido w-50 text-center border rounded">
+                    <h4 class="fw-medium">Navegação</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" onclick="display('home')">
+                            <i class="ri-home-4-line"></i>
+                            Home
+                        </li>
+                        <li class="list-group-item" onclick="display('ifms')">
+                            <i class="ri-graduation-cap-line"></i>
+                            IFMS
+                        </li>
+                        <li class="list-group-item" onclick="document.location.href = 'notas.html'">
+                            <i class="ri-sticky-note-line"></i>
+                            Notas
+                        </li>
+                        <li class="list-group-item" onclick="display('Code Developer')">
+                            <i class="ri-code-s-slash-line"></i>
+                            Code Developer
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content text-center border w-100 rounded index">
+                    <!-- menu de opções -->
+                    <div class="dropdown drop-view">
+                        <button class="btn btn-outline-primary dropdown-toggle w-100" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Navegação
+                        </button>
+                        <ul class="dropdown-menu">
+                            <div class="d-flex text-start">
+                                <div class="px-3 py-2">
+                                    <h6>Principais</h6>
+                                    <li class="dropdown-item" onclick="display('home')">
+                                        <i class="ri-home-4-line"></i>
+                                        Home
+                                    </li>
+                                    <li class="dropdown-item" onclick="display('ifms')">
+                                        <i class="ri-graduation-cap-line"></i>
+                                        IFMS
+                                    </li>
+                                    <li class="dropdown-item" onclick="document.location.href = 'notas.html'">
+                                        <i class="ri-sticky-note-line"></i>
+                                        Notas
+                                    </li>
+                                    <li class="dropdown-item" onclick="display('Code Developer')">
+                                        <i class="ri-code-s-slash-line"></i>
+                                        Code Developer
+                                    </li>
+
+                                </div>
+                                <!-- <div class="px-3 py-2">
+                                        <h6>Outros</h6>
+                                        <li><a class="dropdown-item">Ação 4</a></li>
+                                        <li><a class="dropdown-item">Ação 5</a></li>
+                                        <li><a class="dropdown-item">Ação 6</a></li>
+                                    </div> -->
+                            </div>
+                        </ul>
+                    </div>
+
+                    <!-- conteudo aparece aqui -->
+                    <div id="view">
+
+                    </div>
+                    <script src="assets/js/view.js"></script>
+                </div>
+
+                <div class="novidades w-50 text-center border rounded">
+                    Novidades
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-5 border">
+        <p>footer</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/lib/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/popper.min.js"></script>
+    <script src="assets/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/swiperjs.js"></script>
+</body>
+
+</html>
