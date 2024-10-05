@@ -75,7 +75,7 @@ function viewHome() {
                                                 </p> -->
                                             </div>
                                             <div class="card-footer text-body-secondary">
-                                                V - 0.1.0
+                                                V - 0.1.8
                                             </div>
                                         </div>
                                     </div>
