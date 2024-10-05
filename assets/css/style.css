@@ -160,9 +160,11 @@ h6 {
     font-weight: 600;
     color: #e7e7e7;
 }
+
 .drop-view {
     display: none;
 }
+
 .icon-view {
     background-color: var(--gelo);
     color: var(--preto);
@@ -174,14 +176,17 @@ h6 {
     height: 25px;
     border: solid 1px var(--preto);
 }
+
 .sub-title-view span {
     position: relative;
     margin-left: 10px;
     font-size: 18px;
 }
+
 .card-display-a {
     display: none;
 }
+
 .icon-view-title {
     background-color: var(--gelo);
     color: var(--preto);
@@ -195,6 +200,62 @@ h6 {
     border: solid 1px var(--preto);
     margin-right: 10px;
 }
+
+
+.progress {
+    background-color: #2a2a2a;
+    height: 40px;
+}
+
+.progress-bar {
+    background-color: #4CAF50;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 700;
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.progress-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.criarNota {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.criarNota button {
+    position: fixed;
+    bottom: 30px;
+    width: 70%;
+}
+
+.viewNotas {
+    display: none;
+}
+
+.criarNota {
+    margin-top: 20px;
+}
+
+#verNotas {
+    display: none;
+}
+
 @media (max-width:400px) {
     .drop {
         display: none;
@@ -216,12 +277,15 @@ h6 {
     .novidades {
         display: none;
     }
+
     .drop-view {
         display: block;
     }
+
     .card-display {
         display: none;
     }
+
     .card-display-a {
         display: block;
     }

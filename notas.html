@@ -1,2 +1,231 @@
-<h1>page 404 - contrution</h1>
-<a href="index.html">voltar</a>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/remixicon/remixicon.css">
+    <link rel="stylesheet" href="assets/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/FAVICON.ico" type="image/x-icon">
+
+    <title>Modern Jao</title>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="circle">
+        <!-- cursor -->
+    </div>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <h2 style="text-decoration:underline;">Progresso do Relacionamento</h2>
+                <div class="row">
+                    <div class="col- mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Tempo Junto</h5>
+                                <p id="totalTime">12 dias juntos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col- mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Meses</h5>
+                                <p id="monthsLeft">Faltam 11 meses para o próximo aniversário!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col- mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Segundos</h5>
+                                <p id="secondsLeft">Faltam 30432143 segundos para o próximo
+                                    aniversário!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container mt-3">
+                    <div class="progress">
+                        <div class="progress-bar" id="progressBarDays" role="progressbar">
+                        </div>
+                        <p id="progressText" class="progress-text">3%</p> <!-- Texto do progresso -->
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar TOP -->
+    <nav class="navbar border-bottom bg-body-tertiary">
+        <div class="ofcanva-logo">
+            <div class="opcao-nav">
+                <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <i class="ri-menu-2-line fs-4"></i>
+                </button>
+            </div>
+            <div class="logo">
+                <h1>
+                    <a class="navbar-brand" href="index.html"><span>Modern</span> Jao</a>
+                </h1>
+            </div>
+        </div>
+        <div class="make-nav">
+            <div class="btn-group">
+                <div class="drop">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle me-3 btn-nav"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-primary me-3 btn-nav"><i class="ri-book-2-fill"></i></button>
+                <button class="btn btn-outline-primary me-3 btn-nav"><i class="ri-shield-star-fill"></i></button>
+                <button class="btn btn-outline-primary btn-nav" onclick="tema()"><i class="ri-sun-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="p-3">
+        <!-- Título -->
+        <div class="content d-flex justify-content-center align-items-center">
+            <h1 class="fs-3 text-center">
+                <i class="ri-information-2-line" style="margin-right: 20px;" type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"></i>
+                Notas
+            </h1>
+        </div>
+
+        <!-- Quando não tiver notas -->
+        <div id="semNotas" class="viewNotas mt-3 mb-3">
+            <div class="semNotas">
+                <h3 class="text-center">Sem Notas</h3>
+            </div>
+        </div>
+
+        <!-- Container para exibir as notas -->
+        <div id="notasContainer"></div>
+
+        <!-- Visualização de nota -->
+        <div id="verNotas" style="display:none;">
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary" onclick="voltar()">Voltar</button>
+                <div class="dropdown">
+                    <a class="btn btn-outline-primary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-more-2-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="editarNota()">Editar</a></li>
+                        <li><a class="dropdown-item text-danger" href="#" onclick="excluirNota()">Excluir</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <h3 id="notaTitulo"></h3>
+            <span id="notaSubtitulo"></span>
+            <hr>
+            <p id="notaConteudo"></p>
+            <small id="notaData"></small>
+        </div>
+
+        <!-- Botão para criar nota -->
+        <div class="criarNota">
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Criar um Bloco de Nota</button>
+        </div>
+
+        <!-- Modal para criar/editar nota -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Bloco de Notas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formNota">
+                            <div class="mb-3">
+                                <label for="titulo" class="col-form-label">Título</label>
+                                <input type="text" class="form-control" id="titulo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subtitulo" class="col-form-label">Subtítulo (opcional)</label>
+                                <input type="text" class="form-control" id="subtitulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="conteudo" class="col-form-label">Nota</label>
+                                <textarea class="form-control" id="conteudo" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="salvarNota()">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- <footer class="mt-5 border">
+        <p>footer</p>
+    </footer> -->
+    <!-- Scripts -->
+    <script src="assets/lib/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/popper.min.js"></script>
+    <script src="assets/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/swiperjs.js"></script>
+    <script src="assets/js/view.js"></script>
+    <script src="assets/js/progressoDoRelacionamento.js"></script>
+    <script src="assets/js/notas.js"></script>
+</body>
+
+</html>
