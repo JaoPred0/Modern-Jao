@@ -1,0 +1,45 @@
+:root {
+    --branco: #ffff;
+    --gelo: #f1f1f1;
+    --verder: #19c463;
+    --preto: #2a2a2a;
+}
+.esconder {
+    display: none;
+}
+.aparecer {
+    display: block;
+}
+.mySwiper2 img {
+    border-radius: 100000000px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--gelo);
+}  
+@media (max-width:400px)  {
+    .mySwiper2 img {
+        width: 80px;
+        height: 80px;
+    }
+    .title-wrapper {
+        font-size: 13px;
+    }
+}
+
+.card-container {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards no desktop */
+    }
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards no celular */
+    }
+}

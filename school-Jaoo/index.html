@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/FAVICON.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>School Jao</title>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="circle">
+        <!-- cursor -->
+    </div>
+
+    <!-- Navbar TOP -->
+    <nav class="navbar border-bottom bg-body-tertiary">
+        <div class="ofcanva-logo">
+            <div class="logo" style="margin-left: 10px;">
+                <h1>
+                    <a class="navbar-brand" href="index.html"><span>School</span> Jao</a>
+                </h1>
+            </div>
+        </div>
+        <div class="make-nav">
+            <div class="btn-group">
+                <div class="drop">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle me-3 btn-nav"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-chat-3-line"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-primary me-3 btn-nav"
+                    onclick="document.location.href ='../index.html'"><i class="ri-home-5-line"></i></button>
+                <button class="btn btn-outline-primary me-3 btn-nav"><i class="ri-shield-star-fill"></i></button>
+                <button class="btn btn-outline-primary btn-nav" onclick="tema()"><i class="ri-sun-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="p-3">
+        <!-- Swiper -->
+        <div class="swiper mySwiper pt-3">
+            <div class="swiper-wrapper rounded">
+                <div class="swiper-slide"><img src="https://fakeimg.pl/1400x200/?text=Hello"></div>
+                <div class="swiper-slide"><img src="https://fakeimg.pl/1400x200/?text=AmoMinhaMulher"></div>
+                <div class="swiper-slide"><img src="https://fakeimg.pl/1400x200/?text=Gabriella"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper Logo-->
+        <div class="swiper mySwiper2 pt-3 pb-3">
+            <div class="swiper-wrapper">
+                <div onclick="display('ebook')" class="swiper-slide d-flex flex-column"><img src="img/logo1.png"><span
+                        class="title-wrapper">E-book</span></div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <hr>
+
+        <div id="view">
+            
+            <section id="ebook" class="esconder">
+                <div class="mt-3">
+                    <h1 class="fs-1"><i class="ri-book-marked-line"
+                            style="margin-right: 10px; text-align: center !important;"></i> E-book</h1>
+                    <div class="card">
+                        <div class="card-body text-warning">
+                            Isso é uma página teste!
+                        </div>
+                    </div>
+                    <!-- Melhores Livro -->
+                    <div class="bodyBook mt-3 mb-3">
+                        <h3 class="text-center"><i class="ri-star-fill"></i> Melhores Livros</h3>
+                        <div class="swiper mySwiperEbookStar pt-3">
+                            <div class="swiper-wrapper rounded">
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://fakeimg.pl/3000x2000/?text=Ebook" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ebook</h5>
+                                            <p class="card-text">Sobre o Livro.</p>
+                                            <a href="#" class="btn btn-primary">Abaixar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://fakeimg.pl/3000x2000/?text=Ebook" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ebook</h5>
+                                            <p class="card-text">Sobre o Livro.</p>
+                                            <a href="#" class="btn btn-primary">Abaixar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://fakeimg.pl/3000x2000/?text=Ebook" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ebook</h5>
+                                            <p class="card-text">Sobre o Livro.</p>
+                                            <a href="#" class="btn btn-primary">Abaixar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://fakeimg.pl/3000x2000/?text=Ebook" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ebook</h5>
+                                            <p class="card-text">Sobre o Livro.</p>
+                                            <a href="#" class="btn btn-primary">Abaixar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://fakeimg.pl/3000x2000/?text=Ebook" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ebook</h5>
+                                            <p class="card-text">Sobre o Livro.</p>
+                                            <a href="#" class="btn btn-primary">Abaixar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Toso os Livros -->
+                    <div class="bodyBook mt-3 mb-3">
+                        <h3 class="text-center"><i class="ri-book-2-fill"></i> Todos os Livros</h3>
+
+                        <div class="container my-4">
+                            <h1 class="text-center">Biblioteca de Ebooks</h1>
+
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="searchInput" class="form-control mb-4"
+                                placeholder="Pesquisar livros...">
+
+                            <!-- Container dos cards -->
+                            <div id="cardContainer" class="card-container"></div>
+
+                            <!-- Botão para carregar mais livros -->
+                            <div class="text-center mt-4">
+                                <button id="loadMoreBtn" class="btn btn-primary">Mostrar mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="mt-5 border">
+        <p>footer</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="../assets/lib/bootstrap.bundle.min.js"></script>
+    <script src="../assets/lib/popper.min.js"></script>
+    <script src="../assets/lib/swiper-bundle.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/cursor.js"></script>
+    <script src="../assets/js/swiperjs.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/ebook.js"></script>
+    <script src="../assets/js/progressoDoRelacionamento.js"></script>
+</body>
+
+</html>

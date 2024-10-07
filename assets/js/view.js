@@ -19,11 +19,11 @@ function viewHome() {
                                 <h1 class="fs-2">Home</h1>
                                 <!-- IFMS -->
                                 <div>
-                                    <div class="sub-title-view d-flex">
+                                    <div class="sub-title-view d-flex ">
                                         <i class="ri-graduation-cap-line icon-view"></i>
                                         <span>IFMS</span>
                                     </div>
-                                    <div class="body-view">
+                                    <div class="body-view ">
                                         <div class="card mt-3">
                                             <div class="card-header">
                                                 INFO 4C - Matutino
@@ -40,7 +40,7 @@ function viewHome() {
                                         </div>
                                     </div>
 
-                                    <div class="row mt-3">
+                                    <div class="row mt-3 ">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <div class="card">
                                                 <div class="card-body">
@@ -60,11 +60,11 @@ function viewHome() {
                                 
                                 <!-- notas -->
                                 <div>
-                                    <div class="sub-title-view d-flex">
+                                    <div class="sub-title-view d-flex ">
                                         <i class="ri-information-2-line icon-view"></i>
                                         <span>Notas de Atualizações</span>
                                     </div>
-                                    <div class="body-view">
+                                    <div class="body-view ">
                                         <div class="card text-center mt-3">
                                             <div class="card-header">
                                                 Atualização
@@ -93,7 +93,7 @@ function viewIFMS() {
 
             <span></span>
         </div>
-        <div class="body-view">
+        <div class="body-view ">
             <div class="card mt-3">
                 <div class="card-header">
                     <i class="ri-information-2-line"></i> Sobre
@@ -102,14 +102,14 @@ function viewIFMS() {
                     <blockquote class="blockquote mb-0">
                         <p>Dados de Informações da Escola.</p>
                         <footer class="blockquote-footer"><cite title="Source Title"><a
-                                    href="">Acessar</a></cite></footer>
+                                    href="404.html">Acessar</a></cite></footer>
                     </blockquote>
                 </div>
             </div>
         </div>
         <hr>
         <!-- Horário -->
-        <div class="mt-3">
+        <div class="mt-3 ">
             <h4 class="fs-3"><i class="ri-time-line"></i> Horário</h4>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <!-- Horário Matutino -->
@@ -143,19 +143,19 @@ function viewIFMS() {
                                     <tbody>
                                         <tr>
                                             <td>07:00 - 7:45</td>
+                                            <td>LPLB 2 (sala 04)</td>
+                                            <td>FÍSICA 2 (sala 04)</td>
+                                            <td>HISTÓRIA 4 (sala 10)</td>
                                             <td></td>
-                                            <td></td>
-                                            <td>HISTÓRIA 4</td>
-                                            <td></td>
-                                            <td>ESPANHOL TÉCNICO</td>
+                                            <td>ESPANHOL TÉCNICO (sala 10)</td>
                                         </tr>
                                         <tr>
                                             <td>07:45 - 08:30</td>
+                                            <td>LPLB 2 (sala 04)</td>
+                                            <td>FÍSICA 2 (sala 04)</td>
                                             <td></td>
                                             <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>ESPANHOL TÉCNICO</td>
+                                            <td>ESPANHOL TÉCNICO (sala 10)</td>
                                         </tr>
                                         <tr>
                                             <td>08:30 - 09:15</td>
@@ -170,14 +170,14 @@ function viewIFMS() {
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td>HISTÓRIA 4</td>
-                                            <td></td>
+                                            <td>HISTÓRIA 4 (sala 10)</td>
+                                            <td>SOCIOLOGIA 2 (sala 04)6</td>
                                         </tr>
                                         <tr>
                                             <td>10:20 - 11:05</td>
                                             <td></td>
                                             <td></td>
-                                            <td>EMPREENDEDORISMO E INOVAÇÃO</td>
+                                            <td>EMPREENDEDORISMO E INOVAÇÃO (sala 10)</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
@@ -185,7 +185,15 @@ function viewIFMS() {
                                             <td>11:05 - 11:50</td>
                                             <td></td>
                                             <td></td>
-                                            <td>EMPREENDEDORISMO E INOVAÇÃO</td>
+                                            <td>EMPREENDEDORISMO E INOVAÇÃO (sala 10)</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11:50 - 12:35</td>
+                                            <td>FÍSICA 2 (sala 04)</td>
+                                            <td>LPLB 2 (sala 04)</td>
+                                            <td></td>
                                             <td></td>
                                             <td></td>
                                         </tr>
@@ -364,7 +372,7 @@ function viewIFMS() {
         </div>
         <hr>
         <!-- notas -->
-        <div class="mt-3">
+        <div class="mt-3 ">
             <h4 class="fs-3"><i class="ri-sticky-note-line"></i> Notas </h4>
             <p class="card-text">Bloco de notas destinado ao armazenamento de
                 informações e anotações, preparado para ser utilizado em
@@ -392,7 +400,7 @@ function viewCodeDeveloper() {
                                 <hr>
                                 <div class="mt-3 text-center">
                                     <p>Code Developer -  Desenvolvimento de Software</p>
-                                    <a href="code-developer.html">Code Developer</a>
+                                    <a href="404.html">Code Developer</a>
                                 </div>
                             </div>`
     return view;
